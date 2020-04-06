@@ -20,6 +20,7 @@ const getCourseKeys = (obj) => {
   return Object.keys(obj);
 };
 
+//new branch
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 Use the characters data below for the remainder of the challenges.
@@ -75,7 +76,7 @@ let characters = [
 const getHouses = (arr) => {
   let houses = [];
   // Solution code here...
-  arr.forEach(val =>{
+  arr.forEach(val => {
     houses.push(val.house);
   })
   return houses;
