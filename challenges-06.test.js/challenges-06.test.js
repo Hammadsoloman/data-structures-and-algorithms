@@ -93,6 +93,8 @@ For example:
 hasChildrenValues(characters, 'Cersei') will return true
 hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
+//i get help in this problem
+
 const hasChildrenValues = (arr, character) => {
   let resulte = false;
   arr.forEach(() => {
