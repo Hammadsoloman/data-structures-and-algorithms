@@ -7,10 +7,14 @@ Write a function named oddValues that, given an array of integers as input, uses
 
 For example, oddValues([1,2,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
-
 const oddValues = (arr) => {
+  // Solution code here...
+  let odds = arr.filter( (value,idx) =>
+  {
+    return (value % 2 !== 0);
+  });
+  return odds;
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -37,6 +41,11 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 
 const notInFirstArray = (forbiddenValues, arr) => {
   // Solution code here...
+  const notIncElements = arr.filter(e =>
+    {
+      return !forbiddenValues.includes(e);
+    });
+    return notIncElements;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -78,9 +87,16 @@ const snorlaxData = {
   weight: 4600,
 };
 
-const getBaseStatGreaterThan = (arr, minBaseStat) => {
-  // Solution code here...
+const getBaseStatGreaterThan = (firArr, minBaseStat) => {
+  let secArr = firArr.filter(val => {
+    //val [{url,name},effort,base]
+    if(minBaseStat < val.baseStat){
+      return true;
+    }
+  })
+  return secArr;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
